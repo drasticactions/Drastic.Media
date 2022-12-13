@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<IsPackable>true</IsPackable>
+		<Description>A database implementation for Drastic.Media using LiteDB.</Description>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="LiteDB" Version="5.0.12" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <ProjectReference Include="..\Drastic.Media\Drastic.Media.csproj" />
+	</ItemGroup>
+</Project>

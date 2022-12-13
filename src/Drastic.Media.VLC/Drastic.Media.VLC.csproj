@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="../MultiTargeting.targets" />
+	<Import Project="../VLC.props" />
+	
+	<PropertyGroup>
+		<TargetFrameworks>net7.0;net7.0-android;net7.0-ios;net7.0-windows10.0.19041</TargetFrameworks>
+		<IsPackable>true</IsPackable>
+		<Description></Description>
+	</PropertyGroup>
+	
+	<ItemGroup>
+	  <ProjectReference Include="..\Drastic.Media\Drastic.Media.csproj" />
+	</ItemGroup>
+
+</Project>

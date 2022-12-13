@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<Import Project="../MultiTargeting.targets" />
+	<PropertyGroup>
+		<TargetFrameworks>net7.0;net7.0-android;net7.0-ios;net7.0-maccatalyst;net7.0-windows10.0.19041</TargetFrameworks>
+		<IsPackable>true</IsPackable>
+		<Description>Native Platform Handlers for Drastic.Media.</Description>
+	</PropertyGroup>
+	
+	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-android'">
+		<PackageReference Include="Xamarin.AndroidX.Core" Version="1.6.0.3">
+		</PackageReference>
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <ProjectReference Include="..\Drastic.Media\Drastic.Media.csproj" />
+	</ItemGroup>
+</Project>
